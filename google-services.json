@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "491599092306",
+    "firebase_url": "https://hrms-c0c90.firebaseio.com",
+    "project_id": "hrms-c0c90",
+    "storage_bucket": "hrms-c0c90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491599092306:android:c8b279b83089dc4f",
+        "android_client_info": {
+          "package_name": "com.hrms.satish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491599092306-ntchnb6qu1fdgr29l890247hf3ephuke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hrms.satish",
+            "certificate_hash": "cd5a45dbe700996fd0ea8c8c228f04d5ffeddde2"
+          }
+        },
+        {
+          "client_id": "491599092306-q4nec95ji1ejphkutrl760572ds133qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRdNH-1LMhKvZliMXS22LyaRYl3gtg3pU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491599092306-q4nec95ji1ejphkutrl760572ds133qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

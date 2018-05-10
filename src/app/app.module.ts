@@ -6,7 +6,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import { UserProvider } from '../providers/user/user';
+import { ApiProvider } from '../providers/api/api';
+import { Geolocation } from '@ionic-native/geolocation';
+import { NativeStorage } from '@ionic-native/native-storage';
+import {Push} from '@ionic-native/push';
 @NgModule({
   declarations: [
     MyApp,
@@ -14,7 +18,17 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+          platforms: {
+            ios: {
+              statusbarPadding: true
+            },
+            android: {
+              statusbarPadding: true
+            }
+          },
+          preloadModules: false
+        })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +38,12 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserProvider,
+    ApiProvider,
+    Geolocation,
+    NativeStorage,
+    Push
   ]
 })
 export class AppModule {}

@@ -1,1 +1,28 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-split-pane>
+    <ion-menu [content]="content" >
+        <ion-header>
+            <ion-toolbar color="app">
+                <ion-title>Welcome <small class="_version">(Beta v{{version}})</small></ion-title>
+            </ion-toolbar>
+            <ion-toolbar class="custom-subheader" color="app">
+                <ion-title>
+                    <ion-icon  name="radio-button-on" color="secondary"> Satish</ion-icon>
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list no-lines class="side-menu">
+                <button menuClose ion-item >
+                    <ion-icon name="ios-home" item-start></ion-icon>
+                    Dashboard
+                </button>
+                <hr>
+                <button menuClose ion-item (click)="logout()">
+                    <ion-icon name="power" item-start></ion-icon>
+                    Logout
+                </button>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+   <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main></ion-nav>
+</ion-split-pane>
