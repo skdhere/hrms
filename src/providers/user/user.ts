@@ -26,7 +26,6 @@ export class UserProvider {
                 this.setUser(
                     val.id,
                     val.fname,
-                    val.emailId,
                     val.userType,
                     val.token,
                     val.contactno,
@@ -37,10 +36,9 @@ export class UserProvider {
         });
     }
     
-    public setUser(id: string, name: string, email: string, userType: string, token: string, contactno: string, token_expiry: string, login_type: string ="") {
+    public setUser(id: string, name: string,userType: string, token: string, contactno: string, token_expiry: string, login_type: string ="") {
         this.id = id;
         this.fname = name;
-        this.emailId = email;
         this.userType = userType;
         this.token = token;
         this.contactno = contactno;
